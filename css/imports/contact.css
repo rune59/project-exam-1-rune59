@@ -1,0 +1,82 @@
+.contact-container {
+    padding-top: 50px;
+    width: 120%;
+    max-width: 600px;
+    margin: 0 auto 0 auto;
+    flex: 1 0 auto;
+}
+
+
+/* Contact form */
+
+form {
+    padding: 2em;
+    background: white;
+    border-radius: 1rem;
+}
+
+#contactForm label {
+    display: block;
+    margin-top: 1rem;
+}
+
+#contactForm input {
+    width: 100%;
+    margin-top: 2px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Error handling in the form */
+.form-error {
+    display: none;
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 2px;
+}
+
+/* Contact button */
+button {
+    background: yellow;
+    border-color: blue;
+    width: 200px;
+    padding: 1rem;
+    color: blue;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-size: larger;
+}
+
+button:disabled {
+    background: lightgray;
+}
+
+/* Contact confirmation successful  */
+#message {
+    background: whitesmoke;
+    border: 5px;
+    border-color: yellow;
+    /* padding: 1rem; */
+    color: black;
+    font-size: 120%;
+    border-radius: 1rem;
+    margin: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    #contactForm {
+        width: 400px;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media only screen and (max-width: 500px) {
+    #contactForm {
+        width: 300px;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

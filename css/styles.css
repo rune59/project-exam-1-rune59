@@ -1,0 +1,66 @@
+@import "imports/links.css";
+@import "imports/variables.css";
+@import "imports/navbar.css";
+@import "imports/media.css";
+@import "imports/footer.css";
+@import "imports/about.css";
+@import "imports/blogPosts.css";
+@import "imports/blogPostSpecific.css";
+@import "imports/index.css";
+@import "imports/contact.css";
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 50px;
+    margin: 0px;
+    font-size: 20px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* the purpose with the second "auto" is to place the footer at the bottom of the page */
+}
+
+header, 
+footer{
+    margin: 0px;
+}
+main{
+    margin: 20px;
+}
+
+h1,
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+*, 
+:after, 
+:before {
+    box-sizing: border-box;
+}
+
+.breadcrumb-nav{
+    padding-left: 20px;
+}
+
+
+/* Loader */
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid red;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specific blog post</title>
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav id="main-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blogPosts.html">Blog posts</a></li>
+                <li><a href="blogPostSpecific.html" class="active">Blog post specific</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <input type="checkbox" id="hamburger-input" class="burger-shower" />
+        <label id="hamburger-menu" for="hamburger-input">
+            <nav id="sidebar-menu">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blogPosts.html">Blog posts</a></li>
+                    <li><a href="blogPostSpecific.html">Blog post specific</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </label>
+
+        <div class="overlay"></div>
+    </header>
+    <main class="blogSpecificContainer">
+        <section>
+            <div class="breadcrumb-nav">
+                <a href="blogPosts.html">Back to the blog posts overview </a>
+            </div>
+            <h1>This specific blog post</h1>
+            <div class="oneBlog">
+
+            </div>
+
+        </section>
+    </main>
+    <footer>Copyright ©</footer>
+    <script src="js/blogPostSpecific.js"></script>
+</body>
+
+</html>

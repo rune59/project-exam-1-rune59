@@ -13,8 +13,6 @@ async function fetchAllBlogs() {
 
         resultsContainer.innerHTML = "";
 
-
-
         json.forEach(function(blog) {
             resultsContainer.innerHTML +=
                 `<div class="carousel-post"> 

@@ -1,0 +1,236 @@
+.oneBlog-text-and-image{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 80px;
+    align-items: center;
+}
+
+.oneBlog-specific{
+    flex-direction: column;
+}
+
+.oneBlog-text-and-image > * {
+    flex: 1;
+}
+
+
+.oneBlog-image{
+    padding: 30px;
+    margin: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+
+.oneBlog-text{
+    padding: 100px;
+    width: fit-content;
+}
+
+.oneBlog-title{
+    padding: 20px;
+}
+.oneBlog-image > img {
+  width: 900px;
+  object-fit: contain;
+}
+
+
+
+@media only screen and (max-width: 1800px) {
+    .oneBlog-text {
+        width: 300px;
+        padding: 10px;
+    }
+    .oneBlog-image > img{
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .oneBlog-text {
+        width: 300px;
+        padding: 10px;
+    }
+    .oneBlog-image > img {
+        width: 900px;
+        object-fit: contain;
+    }
+    .oneBlog-text-and-image{
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+    .oneBlog-text{
+        width: 1200px;
+    }
+    .oneBlog-image{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .oneBlog-text {
+        width: 300px;
+        padding: 10px;
+    }
+    .oneBlog-image > img {
+        width: 900px;
+        object-fit: contain;
+    }
+    .oneBlog-text-and-image{
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+    .oneBlog-text{
+        width: 900px;
+    }
+    .oneBlog-image{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .oneBlog-text {
+        width: 300px;
+        padding: 10px;
+    }
+    .oneBlog-image > img {
+        width: 700px;
+        object-fit: contain;
+    }
+    .oneBlog-text-and-image{
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+    .oneBlog-text{
+        width: 700px;
+    }
+    .oneBlog-image{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .oneBlog-text {
+        width: 300px;
+        padding: 10px;
+    }
+    .oneBlog-image > img {
+        width: 600px;
+        object-fit: contain;
+    }
+    .oneBlog-text-and-image{
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+    .oneBlog-text{
+        width: 600px;
+    }
+    .oneBlog-image{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .oneBlog-text {
+        width: 300px;
+        padding: 10px;
+    }
+    .oneBlog-image > img {
+        width: 500px;
+        object-fit: contain;
+    }
+    .oneBlog-text-and-image{
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+    .oneBlog-text{
+        width: 500px;
+    }
+    .oneBlog-image{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .oneBlog-text {
+        width: 300px;
+        padding: 10px;
+    }
+    .oneBlog-image > img {
+        width: 400px;
+        object-fit: contain;
+    }
+    .oneBlog-text-and-image{
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+    .oneBlog-text{
+        width: 400px;
+    }
+    .oneBlog-image{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .oneBlog-text {
+        width: 300px;
+        padding: 10px;
+    }
+    .oneBlog-image > img {
+        width: 300px;
+        object-fit: contain;
+    }
+    .oneBlog-text-and-image{
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+    .oneBlog-text{
+        width: 300px;
+    }
+    .oneBlog-image{
+        width: 100%;
+    }
+    .oneBlog-text h3{
+        font-weight: normal;
+        font-size: 1em;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .oneBlog-text {
+        width: 300px;
+        padding: 10px;
+    }
+    .oneBlog-image > img {
+        width: 200px;
+        object-fit: contain;
+    }
+    .oneBlog-text-and-image{
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+    .oneBlog-text{
+        width: 200px;
+    }
+    .oneBlog-image{
+        width: 100%;
+    }
+    .oneBlog-text h3{
+        font-weight: normal;
+        font-size: 1em;
+    }
+}
+
+
+
+

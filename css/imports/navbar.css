@@ -123,5 +123,5 @@
     transition: opacity .35s, visibility .35s, height .35s;
     overflow: hidden;
     background: var(--backgroundColorOverlay);
-    z-index: -1;
+    z-index: 1;
 }

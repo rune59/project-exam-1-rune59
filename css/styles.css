@@ -64,3 +64,8 @@ h2{
         transform: rotate(360deg);
     }
 }
+
+
+.owl-carousel{
+    z-index:-1;
+}

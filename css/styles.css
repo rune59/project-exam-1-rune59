@@ -20,6 +20,12 @@ body {
     grid-template-rows: auto 1fr auto; /* the purpose with the second "auto" is to place the footer at the bottom of the page */
 }
 
+header{
+    z-index: 99;
+}
+main{
+    z-index: 9;
+}
 
 header, 
 footer{

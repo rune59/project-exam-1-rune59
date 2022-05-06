@@ -6,6 +6,11 @@
     margin-right: auto;
 }
 
+.blogPost__text{
+    max-width: 600px;
+    margin: 0 autos;
+}
+
 .oneBlog{
     display: flex;
     gap: 5px;

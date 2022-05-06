@@ -48,6 +48,7 @@ function createHTML(thisBlog,image) {
                 </div>
                 <div class="oneBlog-image">
                     <img src="${image}">
+                    <img src="${image}" alt="${thisMedia.alt_text}">
                 </div>
             </div>
         </div>

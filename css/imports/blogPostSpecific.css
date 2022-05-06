@@ -28,13 +28,14 @@
     padding: 100px;
     width: fit-content;
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 800px;
 }
 
 
 .oneBlog-title{
     padding: 20px;
 }
+
 .oneBlog-image > img {
   width: 900px;
   object-fit: contain;

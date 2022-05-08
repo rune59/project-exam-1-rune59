@@ -37,8 +37,8 @@
 }
 
 .oneBlog-image > img {
-  width: 900px;
-  object-fit: contain;
+    width: 900px;
+    object-fit: contain;
 }
 
 

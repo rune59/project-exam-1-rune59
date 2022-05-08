@@ -1,51 +1,66 @@
 
-const resultsContainer = document.querySelector(".home-carousel");
-
 const url = "http://localhost:10008/wp-json/wp/v2/posts?_embed&per_page=10";
+
+const carousel = document.querySelector(".carouselbox");
+const buttonLeft = document.querySelector(".switchLeft");
+const buttonRight = document.querySelector(".switchRight");
+
+
 
 
 async function fetchAllBlogs() {
     try {
         const response = await fetch(url);
-        const json = await response.json();
+        const results = await response.json();
 
-        console.log(json);
+        const posts = results;
 
-        resultsContainer.innerHTML = "";
+        carousel.innerHTML = "";
 
-        json.forEach(function(blog) {
-            resultsContainer.innerHTML +=
-                `<div class="carousel-post"> 
+        for (let i = 0; i < posts.length; i++) {
+            console.log(posts[i].id);
+            carousel.innerHTML += 
+                `<div class="item"> 
                     <div class="carousel-img">
-                        <a href="blogPostSpecific.html?id=${blog.id}"><img src="${blog._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}"></a>
+                        <a href="blogPostSpecific.html?id=${results[i].id}"><img src="${results[i]._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}"></a>
                     </div>
-                    <h3><a href="blogPostSpecific.html?id=${blog.id}">${blog.title.rendered}</a></h3>
-                    <p>${blog.content.rendered.substr(0,100)}...</p>
+                    <h3><a href="blogPostSpecific.html?id=${results[i].id}">${results[i].title.rendered}</a></h3>
                 </div>`
                 ;
-        });
-        $('.owl-carousel').owlCarousel({
-            loop:true,
-            margin:10,
-            nav:true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:2
-                },
-                1000:{
-                    items:3
-                }
-            }
-        });
+        }
     }
     catch (error) {
         console.log(error);
-        resultsContainer.innerHTML = message("error", error);
+        latestPosts.innerHTML = message("error", error);
         messageContainer.innerHTML = message("error", "this is an error message");
     }
 }
 
+
 fetchAllBlogs();
+
+let scrollPerClick = document.querySelector(".carouselbox").clientWidth; 
+let scrollAmount = 0; 
+
+buttonLeft.onclick = function () {
+    carousel.scrollTo({
+        top: 0,
+        left: (scrollAmount -= scrollPerClick),
+        behavior: "smooth",
+    });
+
+    if(scrollAmount < 0) {
+        scrollAmount = 0
+    }
+}
+
+buttonRight.onclick = function() {
+    if(scrollAmount <= carousel.scrollWidth - carousel.clientWidth) {
+        carousel.scrollTo({
+            top: 0,
+            left: (scrollAmount += scrollPerClick),
+            behavior: "smooth",
+        }); 
+    }
+}
+

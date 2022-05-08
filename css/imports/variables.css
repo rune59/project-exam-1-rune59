@@ -1,26 +1,11 @@
  
- /* This is one alternative */
- 
- /* :root { */
-  /*Background colors */
-    /* --backgroundColorMainMenu: #202020;
-    --backgroundColorHamburgerMenu: #202020;
-    --backgroundColorFooter: #202020;
-    --backgroundColorOverlay: white; */
-  /*Text colors */
-    /* --textColorMainMenu: #202020;
-    --textColorHamburgerMenuH3: white;
-    --textColorHamburgerMenu: white;
-    --textColorFooter: white; */
-/* }  */
 
 
-/* This is another alternative*/
 :root {
   /*Background colors */
     --backgroundColorMainMenu: lightgreen;
     --backgroundColorHamburgerMenu: lightgreen;
-    --backgroundColorFooter: lightgreen;
+    --backgroundColorFooter: lightgreen; 
 
     --backgroundColorOverlay: white;
   /*Text colors */
@@ -28,4 +13,4 @@
     --textColorHamburgerMenuH3: #202020;
     --textColorHamburgerMenu: #202020;
     --textColorFooter: #202020;
-}
+} 

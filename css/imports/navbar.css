@@ -111,9 +111,10 @@
 #hamburger-input:checked ~ .overlay{
     visibility: visible;
     opacity: 0.4;
+    opacity: 2.4;
 }
 
-.overlay{
+ .overlay{
     position: fixed;
     top: 0;
     left: 0;

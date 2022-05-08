@@ -1,3 +1,125 @@
+
+
+
+/* LATEST POSTS */
+.latest-posts {
+    width: auto;
+    height: auto;
+}
+
+.latest-posts h2 {
+    margin: 0 auto;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    width: fit-content;
+    margin-top: 50px;
+}
+
+/* CAROUSLE */
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 600px;
+}
+
+.carousel-title {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    width: fit-content;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.carousel {
+    height: 500px;
+    width: 90%;
+    position: relative;
+}
+
+.switchLeft,
+.switchRight {
+    font-weight: bold;
+    height: 0%;
+    width: 25px;
+    line-height: 250px;
+    font-size: 45px;
+    text-align: center;
+    top: 0;
+    z-index: 3;
+    margin-top: 17%;
+}
+
+.switchLeft {
+    position: absolute;
+    left: -50px;
+}
+
+.switchRight {
+    position: absolute;
+    right: -50px;
+}
+
+.carouselbox {
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.carouselbox img {
+    width: 640px;
+    height: 440px;
+    background-size: cover;
+    margin: 5px 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    z-index: 2;
+}
+
+.carouselbox img:hover {
+    transform: scale(1.7);
+    /* transform: scale(1.05); */
+    z-index: 5;
+}
+
+.switchLeft:hover,
+.switchRight:hover {
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.carouselbox p {
+    font-size: 25px;
+}
+
+.carouselbox a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.carouselbox a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+
+
+
+
+
+
+
 /* Error feedback in the file index.html */
 .message {
     padding: 1rem;

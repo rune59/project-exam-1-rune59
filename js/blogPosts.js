@@ -22,6 +22,7 @@ async function fetchAllBlogs() {
                     <section class="oneBlog">
                         <div class="blogPosts__image">
                             <img src="${blog._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url}" width=600>
+                                 alt="${blog._embedded["wp:featuredmedia"][0].alt_text}"
                         </div>
                         <div class="blogPosts__text">
                             <h3 class="blogHeading">${blog.title.rendered}</h3>

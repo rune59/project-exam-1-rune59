@@ -19,7 +19,7 @@ The blog website uses WordPress as a headless CMS. The website uses the API from
 
 Home page contains a carousel, programmed in JavaScript. It shows a small number of the latest blog posts posted in WordPress. One can scroll forward or backward in the order of blog posts.
 
-The website uses 
+
 
 
 [Back To The Top](#project-name)
